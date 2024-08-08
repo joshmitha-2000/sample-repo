@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image:url(https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-43333.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+        }
+        .container{
+            /* align-items: center; */
+            /* padding:3rem; */
+            border:1px solid black;
+            /* margin:15%; */
+            /* width:50%;
+            height: 50%; */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #000;
+            text-align: center;
+            width: 20%;
+            height: 30%;
+            display: grid;
+            grid-gap: 6px;
+            margin-left: 40%;
+            margin-top: 3%;
+            /* backdrop-filter: blur(5px); */
+            background-color: aliceblue;
+            
+        }
+        #amt{
+            padding:6px;
+        }
+        #perc{
+            padding:6px;
+        }
+        #calculatetip{
+            padding: 4px;
+            background-color: green;
+            font-weight: bolder;
+            font-size: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-size:300%;margin-top: 10%; font-style: italic; color: rgba(19, 1, 1, 0.74);">__Tip Calculator__</h1>
+    <div class="container">
+        <label for="billamount">Bill Amount: </label>
+        <input type="number" id="amt" placeholder="enter amount"><br><br>
+        <label for="tippercentage">Tip Percentage:</label>
+        <input type="number" id="perc" placeholder="enter tip percentage"><br><br>
+        <button onclick="tipcal()" id="calculatetip">Caculate Tip</button><br><br>
+        <label for="tipamount">Tip Amount:</label>
+        <label for="" id="amount"></label><br><br>
+        <label for="totalamount">Total Bill:</label>
+        <label for="" id="bill"></label><br>
+
+
+    </div>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
